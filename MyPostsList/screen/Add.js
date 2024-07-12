@@ -1,11 +1,14 @@
 import React from "react";
-import { StyleSheet, View, Text } from "react-native";
+import { StyleSheet, View } from "react-native";
+import AddTodo from "../components/AddTodo";
 
 
 export default function Add({ navigation }) {
   return (
     <View style={styles.container}>
-      <Text> Add screen </Text>
+      <View style={styles.header}>
+        <AddTodo navigation={navigation} />
+      </View>
     </View>
   )
 }
@@ -15,4 +18,7 @@ const styles = StyleSheet.create({
     padding: 24,
     flex: 1,
   },
+  header: {
+    flex: 1,
+  }
 })

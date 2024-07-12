@@ -1,4 +1,4 @@
-import { StyleSheet, Text, View, ScrollView, Image, FlatList, Button } from 'react-native';
+import { StyleSheet, View, Button } from 'react-native';
 import PostAff from '../components/PostAff'
 import 'react-native-get-random-values';
 import { usePosts } from '../components/PostContext';
