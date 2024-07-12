@@ -18,14 +18,32 @@ export default function App() {
             name='Home' 
             component={Home}
             options={{
-              headerStyle: { backgroundColor: 'red' },
+              headerStyle: { backgroundColor: 'lightblue' },
               headerTintColor: '#fff',
               headerTitleStyle: { fontWeight: 'bold' },
               headerTitleAlign: 'center',
             }}
           />
-          <Stack.Screen name='Change' component={Change}/>
-          <Stack.Screen name='Add' component={Add}/>
+          <Stack.Screen 
+            name='Change' 
+            component={Change}
+            options={{
+              headerStyle: { backgroundColor: 'green' },
+              headerTintColor: '#fff',
+              headerTitleStyle: { fontWeight: 'bold' },
+              headerTitleAlign: 'center',
+            }}
+          />
+          <Stack.Screen 
+            name='Add'
+            component={Add}
+            options={{
+              headerStyle: { backgroundColor: 'orange' },
+              headerTintColor: '#fff',
+              headerTitleStyle: { fontWeight: 'bold' },
+              headerTitleAlign: 'center',
+            }}
+          />
         </Stack.Navigator>
       </NavigationContainer>
     </PostProvider>

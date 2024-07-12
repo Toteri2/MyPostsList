@@ -40,18 +40,20 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
-    padding: 1,
-    borderWidth: 1,
-    borderColor: '#bbb',
-    borderRadius: 30,
-    margin: 5,
+    borderWidth: 2,
+    borderColor: 'black',
+    borderRadius: 10,
+    margin: 10,
+    backgroundColor: '#f9f9f9',
   },
   item: {
     flexDirection: 'column',
     alignItems: 'center',
-    width: '80%',
+    width: 'auto',
+    margin: 10,
     flex: 1,
     margin: 5,
+    width: '100%',
   },
   iconsAndTextContainer: {
     flexDirection: 'row',
@@ -60,11 +62,15 @@ const styles = StyleSheet.create({
     marginBottom: 10,
   },
   icons: {
-    padding: 5,
+    padding: 10,
+    backgroundColor: '#f0f0f0',
+    borderRadius: 50,
   },
   txt: {
     marginLeft: 12,
     marginTop: 5,
+    color: '#333',
+    fontSize: 18,
   },
   img: {
     resizeMode: 'center',
@@ -72,6 +78,7 @@ const styles = StyleSheet.create({
     width: '100%',
     height: 'auto',
     flex: 1,
+    marginTop: 10,
   },
 });
 

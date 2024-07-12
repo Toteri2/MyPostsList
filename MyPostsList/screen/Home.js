@@ -10,7 +10,6 @@ export default function Home({ navigation }) {
       <Button 
         title='Add Post' 
         onPress={() => navigation.navigate('Add')}
-        style={styles.AddButton}
       />
       <PostAff items={posts} navigation={navigation}/>
     </View>
@@ -23,5 +22,6 @@ const styles = StyleSheet.create({
     flex: 1,
     alignItems: 'center',
     marginTop: 20,
-  }
+    backgroundColor: '#f0f4f8',
+  },
 })

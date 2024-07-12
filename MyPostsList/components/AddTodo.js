@@ -33,10 +33,12 @@ export default function AddTodo({ navigation }) {
         onChangeText={changeHandler}
       />
       <AddImg navigate={navigation} image={image} setImage={setImage}/>
-      {image && <Image
-        source={{ uri: image.uri }}
-        style={styles.img}
-      /> }
+      <View style={styles.imgView}>
+        {image && <Image
+          source={{ uri: image.uri }}
+          style={styles.img}
+        /> }
+      </View>
       <Button onPress={() => ButtonPressed(text, image)} title='Add' color='coral'/>
     </View>
   );
@@ -44,7 +46,7 @@ export default function AddTodo({ navigation }) {
 
 const styles = StyleSheet.create({
   input: {
-    marginBottom: 10,
+    marginBottom: 20,
     paddingHorizontal: 8,
     paddingVertical: 6,
     borderBottomWidth: 1,
@@ -52,11 +54,17 @@ const styles = StyleSheet.create({
   },
   container:{
     flex: 1,
+    flexDirection: 'column',
   },
   img: {
-    width: 400,
-    height: 600,
+    resizeMode: 'cover',
+    aspectRatio: 0.7,
+    width: '100%',
+    height: 'auto',
     resizeMode: 'center',
-    flex:1 ,
+  },
+  imgView: {
+    flexGrow: 1,
+    justifyContent: 'center',
   },
 });

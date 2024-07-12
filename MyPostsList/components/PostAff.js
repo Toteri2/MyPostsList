@@ -29,5 +29,7 @@ const styles = StyleSheet.create({
   flat: {
     flex: 1,
     marginTop: 18,
-  }
+    justifyContent: 'center',
+    alignContent: 'center',
+  },
 });
