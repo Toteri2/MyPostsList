@@ -65,12 +65,15 @@ const styles = StyleSheet.create({
     padding: 10,
     backgroundColor: '#f0f0f0',
     borderRadius: 50,
+    width: 'auto',
+    height: 'auto',
   },
   txt: {
     marginLeft: 12,
     marginTop: 5,
     color: '#333',
     fontSize: 18,
+    flexShrink: 1,
   },
   img: {
     resizeMode: 'center',
