@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Button, Text, Image, View, StyleSheet, Platform } from 'react-native';
+import { Button, Text, Image, View, StyleSheet } from 'react-native';
 import * as ImagePicker from 'expo-image-picker';
 import * as Permissions from 'expo-camera';
 
@@ -34,12 +34,6 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     alignItems: 'center',
-  },
-  img: {
-    width: 400,
-    height: 600,
-    resizeMode: 'center',
-    flex:1 ,
   },
   img: {
     width: 400,
